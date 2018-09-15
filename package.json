@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/HayenPhan/tip-calculator/issues"
   },
-  "homepage": "https://github.com/HayenPhan/tip-calculator#readme"
+  "homepage": "https://github.com/HayenPhan/tip-calculator#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
 }
