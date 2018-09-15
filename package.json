@@ -1,0 +1,19 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HayenPhan/tip-calculator.git"
+  },
+  "author": "Hayen Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HayenPhan/tip-calculator/issues"
+  },
+  "homepage": "https://github.com/HayenPhan/tip-calculator#readme"
+}
