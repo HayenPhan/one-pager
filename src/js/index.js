@@ -1,3 +1,5 @@
-import { getMessage } from 'components/test.js';
+const getMessage = () => {
+    console.log('yo')
+}
 
 getMessage();
