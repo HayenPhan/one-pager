@@ -4,10 +4,15 @@
 
 .intro-section {
     background-color: red;
+    background-image: url('../test.jpeg');
+    position: relative;
+    z-index: -1;
 }
 
 .second-section {
-    background-color: blue;
+    border: 2px solid blue;
+    position: relative;
+    z-index: 1;
 }
 
 .third-section {
