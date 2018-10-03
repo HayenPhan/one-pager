@@ -3,7 +3,7 @@
 
 .section__first {
   background-color: red;
-  background-image: url("../test.jpeg");
+  background-image: url("../../images/test.jpeg");
   position: relative;
   z-index: -1; }
 
