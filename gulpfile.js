@@ -11,3 +11,5 @@ gulp.task('styles', () => {
 gulp.task('default', () => {
   gulp.watch('src/sass/**/*.scss', ['styles']);
 });
+
+// Find out how to minify files

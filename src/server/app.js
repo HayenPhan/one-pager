@@ -1,14 +1,13 @@
-const http = require('http');
+var express = require('express');
+var app = express();
+var path = require('path');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
+// viewed at http://localhost:8080
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.listen(8080);
+
+// Je moet morgen even uitzoeken, als je localhost:8080 opent waarom hij je test.js en css files enzo niet compiled
+// Waarschijnlijk moeten ze geminified worden of misschien helemaal niet.
