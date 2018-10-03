@@ -1,12 +1,13 @@
 const gulp = require('gulp');  // gulp runs on node that's why we use the require function to get access to the modules
 const sass = require('gulp-sass');
 
-gulp.task('sass', () => {
+gulp.task('styles', () => {
   return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('src/css/'));
 });
 
-gulp.task('sass:watch', () => {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+// Watch task
+gulp.task('default', () => {
+  gulp.watch('src/sass/**/*.scss', ['styles']);
 });

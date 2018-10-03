@@ -1,0 +1,16 @@
+.section__first, .section__second, .section__third {
+  height: 400px; }
+
+.section__first {
+  background-color: red;
+  background-image: url("../test.jpeg");
+  position: relative;
+  z-index: -1; }
+
+.section__second {
+  border: 2px solid red;
+  position: relative;
+  z-index: 1; }
+
+.section__third {
+  background-color: green; }

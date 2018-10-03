@@ -1,20 +1,22 @@
-.intro-section, .second-section, .third-section {
-    height: 400px;
-}
+.section {
+    &__first, &__second, &__third {
+        height: 400px;
+    }
 
-.intro-section {
-    background-color: red;
-    background-image: url('../test.jpeg');
-    position: relative;
-    z-index: -1;
-}
+    &__first {
+        background-color: red;
+        background-image: url('../test.jpeg');
+        position: relative;
+        z-index: -1;
+    }
 
-.second-section {
-    border: 2px solid blue;
-    position: relative;
-    z-index: 1;
-}
+    &__second {
+        border: 2px solid red;
+        position: relative;
+        z-index: 1;
+    }
 
-.third-section {
-    background-color: green;
+    &__third {
+        background-color: green;
+    }
 }
