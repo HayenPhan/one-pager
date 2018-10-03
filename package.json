@@ -19,6 +19,8 @@
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
   }
 }
