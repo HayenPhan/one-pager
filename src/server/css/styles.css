@@ -2,9 +2,9 @@
   height: 400px; }
 
 .section__first {
-  background-color: red;
+  background-color: purple;
   background-image: url("../images/test.jpeg");
-  position: relative;
+  position: relatie;
   z-index: -1; }
 
 .section__second {
@@ -13,4 +13,4 @@
   z-index: 1; }
 
 .section__third {
-  background-color: yellow; }
+  background-color: purple; }

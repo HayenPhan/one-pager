@@ -4,9 +4,9 @@
     }
 
     &__first {
-        background-color: red;
-        background-image: url('../test.jpeg');
-        position: relative;
+        background-color: purple;
+        background-image: url('../images/test.jpeg');
+        position: relatie;
         z-index: -1;
     }
 
@@ -17,6 +17,6 @@
     }
 
     &__third {
-        background-color: yellow;
+        background-color: purple;
     }
 }
