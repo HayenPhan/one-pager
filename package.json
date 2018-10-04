@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run init-assets & npm run init-server",
     "init-server": "node src/server/app.js",
-    "init-assets": "browserify src/server/index.js -o bundle.js",
+    "init-assets": "browserify src/server/index.js -o src/server/bundle.js",
     "watch": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
