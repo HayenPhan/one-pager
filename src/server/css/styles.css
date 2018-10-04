@@ -3,7 +3,7 @@
 
 .section__first {
   background-color: red;
-  background-image: url("../../images/test.jpeg");
+  background-image: url("../images/test.jpeg");
   position: relative;
   z-index: -1; }
 
@@ -13,7 +13,4 @@
   z-index: 1; }
 
 .section__third {
-  background-color: green; }
-
-
-/* Don't forget to MINIFY */
+  background-color: yellow; }
