@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run init-assets && npm run init-server",
+    "start": "npm run init-assets & npm run init-server",
     "init-server": "node src/server/app.js",
     "init-assets": "browserify src/server/index.js -o bundle.js",
     "watch": "gulp",
@@ -31,8 +31,6 @@
     "gulp-uglify": "^3.0.1"
   },
   "dependencies": {
-    "browserify": "^16.2.3",
-    "express": "^4.16.3",
-    "global": "^4.3.2"
+    "express": "^4.16.3"
   }
 }
