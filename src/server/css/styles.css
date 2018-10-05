@@ -4,11 +4,11 @@
 .section__first {
   background-color: purple;
   background-image: url("../images/test.jpeg");
-  position: relatie;
+  position: relative;
   z-index: -1; }
 
 .section__second {
-  border: 2px solid green;
+  border: 2px solid red;
   position: relative;
   z-index: 1; }
 
