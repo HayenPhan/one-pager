@@ -1,16 +1,10 @@
-.section__first, .section__second, .section__third {
-  height: 400px; }
+body {
+  background-color: #000; }
 
-.section__first {
-  background-color: purple;
-  background-image: url("../images/test.jpeg");
-  position: relative;
-  z-index: -1; }
+.container {
+  padding: 80px; }
 
-.section__second {
-  border: 2px solid red;
-  position: relative;
-  z-index: 1; }
-
-.section__third {
-  background-color: purple; }
+.section-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  background-color: blue; }

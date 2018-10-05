@@ -1,22 +1,19 @@
-.section {
-    &__first, &__second, &__third {
-        height: 400px;
-    }
+body {
+    background-color: #000;
+}
 
-    &__first {
-        background-color: purple;
-        background-image: url('../images/test.jpeg');
-        position: relatie;
-        z-index: -1;
-    }
+.container {
+  padding: 80px;
+}
+.section-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    background-color: blue;
+}
 
-    &__second {
-        border: 2px solid green;
-        position: relative;
-        z-index: 1;
-    }
 
-    &__third {
-        background-color: purple;
-    }
+// Desktop
+
+@media only screen and (min-width: 900px) {
+
 }
