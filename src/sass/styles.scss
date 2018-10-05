@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body {
-    background-color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0; //resets margin and padding, no white borders
 }
 
 .container {
-  padding: 80px;
+
 }
 .section-wrapper {
     text-align: center;
     margin: 0 auto;
-    background-color: blue;
+}
+
+.section {
+    &__first {
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 80px;
+      display: flex;
+    }
+
+    &__first--blue, &__first--white {
+        width: 100%;
+        height: 700px;
+    }
+
+    &__first--blue {
+        background-color: blue;
+    }
+
+    &__first--white {
+        background-color: #f9f9f9;
+    }
+
 }
 
 
 // Desktop
 
 @media only screen and (min-width: 900px) {
-
+    .container {
+      padding: 50px;
+    }
 }
