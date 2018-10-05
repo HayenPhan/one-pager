@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,700');
 
 body {
     background-color: #fff;
@@ -16,10 +16,8 @@ body {
 
 .section {
     &__first {
-      font-family: 'Roboto';
-      font-weight: bold;
-      font-size: 80px;
-      display: flex;
+        display: flex;
+        position: relative;
     }
 
     &__first--blue, &__first--white {
@@ -33,6 +31,20 @@ body {
 
     &__first--white {
         background-color: #f9f9f9;
+    }
+
+    &__first--title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        color: #000;
+    }
+
+    &__first--title-wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 250px;
     }
 
 }
