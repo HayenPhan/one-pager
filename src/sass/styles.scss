@@ -97,22 +97,67 @@ body {
     display: flex;
     flex-direction: column;
 
+    &__title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: #000;
+    }
+
     &__text {
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
         font-size: 18px;
+        margin-bottom: 100px;
     }
 
-    &__text-wrapper {
-        margin-bottom: 50px;
-    }
-
-    &__img {
-        width: 400px;
-        height: 300px;
-        margin: 0 auto;
+    &__project-img {
+        height: 400px;
         object-fit: cover;
     }
+
+    &__project-wrapper {
+        position: relative;
+    }
+
+    &__project-content {
+        z-index: 100;
+        position: absolute;
+        left: 0;
+        right: 150px;
+        bottom: 40px;
+    }
+
+    &__project-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 40px;
+        color: #fff;
+        letter-spacing: 4px;
+    }
+
+    &__project-number {
+        display: none;
+    }
+
+    &__project-button {
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        border: 0;
+    }
+
+    &__project-button h1 {
+        color: #fff;
+    }
+
+
 }
 
 .instruction {
