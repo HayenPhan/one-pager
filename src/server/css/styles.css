@@ -95,7 +95,7 @@ body {
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 40px;
-    color: #fff;
+    color: blue;
     letter-spacing: 4px; }
   .product__project-number {
     display: none; }
@@ -148,16 +148,20 @@ body {
     justify-content: space-around; }
     .product__img {
       margin: 0; }
-    .product__text-wrapper {
-      width: 800px; }
+    .product__intro-wrapper {
+      width: 500px; }
     .product__text {
       font-size: 25px; }
-    .product__img {
-      width: 500px;
-      height: 400px; }
+    .product__project-title {
+      letter-spacing: 4px;
+      font-size: 60px; }
+    .product__project-img {
+      height: 800px; }
+    .product__project-content {
+      left: -180px;
+      bottom: 250px; }
   .instruction {
-    flex-direction: row;
-    justify-content: space-around; }
+    flex-direction: row; }
     .instruction__img {
       margin: 0; }
     .instruction__text-wrapper {

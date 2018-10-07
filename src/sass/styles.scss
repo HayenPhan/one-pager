@@ -138,7 +138,7 @@ body {
         font-weight: 700;
         font-size: 50px;
         margin-bottom: 40px;
-        color: #fff;
+        color: blue;
         letter-spacing: 4px;
     }
 
@@ -227,28 +227,40 @@ body {
         flex-direction: row;
         justify-content: space-around;
 
+
         &__img {
             margin: 0;
         }
 
-        &__text-wrapper {
-            width: 800px;
+        &__intro-wrapper {
+            width: 500px;
         }
-
         &__text {
             font-size: 25px;
         }
 
-        &__img {
-            width: 500px;
-            height: 400px;
+        &__project-title {
+            letter-spacing: 4px;
+            font-size: 60px;
+        }
+
+        &__project-img {
+            height: 800px;
+        }
+
+        &__project-content {
+            left: -180px;
+            bottom: 250px;
+        }
+
+        &__project-wrapper {
+
         }
     }
 
     .instruction {
 
         flex-direction: row;
-        justify-content: space-around;
 
         &__img {
             margin: 0;
