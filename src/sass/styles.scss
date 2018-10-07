@@ -300,5 +300,40 @@ body {
     .recognition {
         display: flex;
         justify-content: space-around;
+        flex-direction: row;
+
+        &__img {
+            height: 800px;
+            margin-left: -200px;
+        }
+
+        &__title {
+            font-size: 60px;
+        }
+
+        &__title-wrapper {
+            bottom: 50px;
+            left: 300px;
+        }
+
+        &__content-wrapper {
+            margin-top: 250px;
+        }
+
+        &__text {
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+
+        &__icon {
+            width: 80px;
+            height: 80px;
+            margin-left: 20px;
+            object-fit: contain;
+        }
+
+        .intro, .product, .recognition {
+            margin-bottom: 400px;
+        }
     }
 }

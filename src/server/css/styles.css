@@ -187,4 +187,25 @@ body {
       bottom: 250px; }
   .recognition {
     display: flex;
-    justify-content: space-around; } }
+    justify-content: space-around;
+    flex-direction: row; }
+    .recognition__img {
+      height: 800px;
+      margin-left: -200px; }
+    .recognition__title {
+      font-size: 60px; }
+    .recognition__title-wrapper {
+      bottom: 50px;
+      left: 300px; }
+    .recognition__content-wrapper {
+      margin-top: 250px; }
+    .recognition__text {
+      font-size: 25px;
+      margin-bottom: 50px; }
+    .recognition__icon {
+      width: 80px;
+      height: 80px;
+      margin-left: 20px;
+      object-fit: contain; }
+    .recognition .intro, .recognition .product, .recognition .recognition {
+      margin-bottom: 400px; } }
