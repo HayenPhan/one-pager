@@ -47,12 +47,30 @@ body {
 }
 
 .sections__wrapper {
-    padding: 30px;
+    padding: 50px;
     text-align: center;
     margin: 0 auto;
 }
 .intro {
-    background-color: yellow;
+
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+    }
+
+    &__text-wrapper {
+
+    }
+
+    &__img {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        background-image: url('../../images/placeholder.png');
+    }
 }
 
 
@@ -61,10 +79,19 @@ body {
 @media only screen and (min-width: 900px) {
     .container {
       padding: 50px;
-      background-color: green;
     }
 
     .sections__wrapper {
         padding: 0;
+        text-align: left;
+    }
+
+    .intro {
+
+        flex-direction: row;
+
+        &__img {
+            margin: 0;
+        }
     }
 }
