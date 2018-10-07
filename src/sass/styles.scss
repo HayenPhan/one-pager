@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-
+    margin: 0 auto;
 }
 .header__wrapper {
     text-align: center;
@@ -49,7 +49,6 @@ body {
 .sections__wrapper {
     padding: 50px;
     text-align: center;
-    margin: 0 auto;
 }
 .intro {
 
@@ -62,7 +61,7 @@ body {
     }
 
     &__text-wrapper {
-
+        margin-bottom: 50px;
     }
 
     &__img {
@@ -79,19 +78,30 @@ body {
 @media only screen and (min-width: 900px) {
     .container {
       padding: 50px;
+      width: 1800px;
     }
 
     .sections__wrapper {
-        padding: 0;
         text-align: left;
+        padding-top: 200px;
     }
 
     .intro {
 
         flex-direction: row;
+        justify-content: space-around;
 
         &__img {
             margin: 0;
+        }
+
+        &__text-wrapper {
+            width: 700px;
+        }
+
+        &__img {
+            width: 500px;
+            height: 400px;
         }
     }
 }
