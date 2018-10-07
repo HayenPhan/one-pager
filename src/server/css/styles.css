@@ -39,21 +39,69 @@ body {
 .intro {
   display: flex;
   flex-direction: column; }
+  .intro__title-wrapper {
+    margin-bottom: 40px; }
+  .intro__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #000; }
+    .intro__title--rectangle {
+      width: 200px;
+      height: 10px;
+      margin: 0 auto;
+      background-color: blue; }
+    .intro__title--secondrectangle {
+      width: 400px;
+      height: 10px;
+      margin: 0 auto; }
   .intro__text {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 18px; }
   .intro__text-wrapper {
     margin-bottom: 50px; }
-  .intro__img {
+
+.product {
+  display: flex;
+  flex-direction: column; }
+  .product__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px; }
+  .product__text-wrapper {
+    margin-bottom: 50px; }
+  .product__img {
     width: 400px;
     height: 300px;
     margin: 0 auto;
     object-fit: cover; }
 
+.instruction {
+  display: flex;
+  flex-direction: column; }
+  .instruction__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px; }
+  .instruction__text-wrapper {
+    margin-bottom: 50px; }
+  .instruction__img {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover; }
+
+.intro, .product, .instruction {
+  margin-bottom: 200px; }
+
 @media only screen and (min-width: 900px) {
   .container {
     padding: 50px;
     width: 1800px; }
+  .header {
+    margin-bottom: 100px; }
   .sections__wrapper {
     text-align: left;
     padding-top: 200px; }
@@ -63,7 +111,30 @@ body {
     .intro__img {
       margin: 0; }
     .intro__text-wrapper {
-      width: 700px; }
-    .intro__img {
+      width: 800px; }
+    .intro__text {
+      font-size: 25px; }
+  .product {
+    flex-direction: row;
+    justify-content: space-around; }
+    .product__img {
+      margin: 0; }
+    .product__text-wrapper {
+      width: 800px; }
+    .product__text {
+      font-size: 25px; }
+    .product__img {
+      width: 500px;
+      height: 400px; }
+  .instruction {
+    flex-direction: row;
+    justify-content: space-around; }
+    .instruction__img {
+      margin: 0; }
+    .instruction__text-wrapper {
+      width: 800px; }
+    .instruction__text {
+      font-size: 25px; }
+    .instruction__img {
       width: 500px;
       height: 400px; } }

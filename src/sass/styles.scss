@@ -50,7 +50,49 @@ body {
     padding: 50px;
     text-align: center;
 }
+
 .intro {
+
+    display: flex;
+    flex-direction: column;
+
+    &__title-wrapper {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        letter-spacing: 4px;
+        color: #000;
+
+        &--rectangle {
+            width: 200px;
+            height: 10px;
+            margin: 0 auto;
+            background-color: blue;
+        }
+
+        &--secondrectangle {
+            width: 400px;
+            height: 10px;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    &__text-wrapper {
+        margin-bottom: 50px;
+    }
+}
+
+.product {
 
     display: flex;
     flex-direction: column;
@@ -58,6 +100,7 @@ body {
     &__text {
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
+        font-size: 18px;
     }
 
     &__text-wrapper {
@@ -72,6 +115,33 @@ body {
     }
 }
 
+.instruction {
+
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    &__text-wrapper {
+        margin-bottom: 50px;
+    }
+
+    &__img {
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+}
+
+.intro, .product, .instruction {
+    margin-bottom: 200px;
+}
+
 
 // Desktop
 
@@ -81,6 +151,9 @@ body {
       width: 1800px;
     }
 
+    .header {
+        margin-bottom: 100px;
+    }
     .sections__wrapper {
         text-align: left;
         padding-top: 200px;
@@ -96,7 +169,52 @@ body {
         }
 
         &__text-wrapper {
-            width: 700px;
+            width: 800px;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+    }
+
+    .product {
+
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__img {
+            margin: 0;
+        }
+
+        &__text-wrapper {
+            width: 800px;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+
+        &__img {
+            width: 500px;
+            height: 400px;
+        }
+    }
+
+    .instruction {
+
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__img {
+            margin: 0;
+        }
+
+        &__text-wrapper {
+            width: 800px;
+        }
+
+        &__text {
+            font-size: 25px;
         }
 
         &__img {
