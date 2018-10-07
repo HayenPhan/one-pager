@@ -62,7 +62,7 @@ body {
 
     &__title {
         font-family: 'Poppins', sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 30px;
         letter-spacing: 4px;
         color: #000;
@@ -103,7 +103,7 @@ body {
 
     &__title {
         font-family: 'Poppins', sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 30px;
         letter-spacing: 4px;
         color: #000;
@@ -209,6 +209,15 @@ body {
         flex-direction: row;
         justify-content: space-around;
 
+
+        &__title-wrapper {
+            text-align: center;
+        }
+        
+        &__title {
+            font-size: 50px;
+        }
+
         &__img {
             margin: 0;
         }
@@ -227,6 +236,10 @@ body {
         flex-direction: row;
         justify-content: space-around;
 
+
+        &__title {
+            font-size: 50px;
+        }
 
         &__img {
             margin: 0;

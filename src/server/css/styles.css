@@ -43,7 +43,7 @@ body {
     margin-bottom: 40px; }
   .intro__title {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 30px;
     letter-spacing: 4px;
     color: #000; }
@@ -70,7 +70,7 @@ body {
     margin-bottom: 40px; }
   .product__title {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 30px;
     letter-spacing: 4px;
     color: #000; }
@@ -137,6 +137,10 @@ body {
   .intro {
     flex-direction: row;
     justify-content: space-around; }
+    .intro__title-wrapper {
+      text-align: center; }
+    .intro__title {
+      font-size: 50px; }
     .intro__img {
       margin: 0; }
     .intro__text-wrapper {
@@ -146,6 +150,8 @@ body {
   .product {
     flex-direction: row;
     justify-content: space-around; }
+    .product__title {
+      font-size: 50px; }
     .product__img {
       margin: 0; }
     .product__intro-wrapper {
