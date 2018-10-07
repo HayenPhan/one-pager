@@ -160,30 +160,43 @@ body {
 
 }
 
-.instruction {
-
+.recognition {
     display: flex;
     flex-direction: column;
+
+    &__img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    &__img-wrapper {
+        position: relative;
+    }
+
+    &__title-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: blue;
+        letter-spacing: 4px;
+    }
 
     &__text {
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
         font-size: 18px;
     }
-
-    &__text-wrapper {
-        margin-bottom: 50px;
-    }
-
-    &__img {
-        width: 400px;
-        height: 300px;
-        margin: 0 auto;
-        object-fit: cover;
-    }
 }
 
-.intro, .product, .instruction {
+.intro, .product, .recognition {
     margin-bottom: 200px;
 }
 
@@ -213,7 +226,7 @@ body {
         &__title-wrapper {
             text-align: center;
         }
-        
+
         &__title {
             font-size: 50px;
         }
@@ -271,25 +284,8 @@ body {
         }
     }
 
-    .instruction {
-
-        flex-direction: row;
-
-        &__img {
-            margin: 0;
-        }
-
-        &__text-wrapper {
-            width: 800px;
-        }
-
-        &__text {
-            font-size: 25px;
-        }
-
-        &__img {
-            width: 500px;
-            height: 400px;
-        }
+    .recognition {
+        display: flex;
+        justify-content: space-around;
     }
 }

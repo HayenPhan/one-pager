@@ -107,22 +107,32 @@ body {
   .product__project-button h1 {
     color: #fff; }
 
-.instruction {
+.recognition {
   display: flex;
   flex-direction: column; }
-  .instruction__text {
+  .recognition__img {
+    height: 400px;
+    object-fit: cover; }
+  .recognition__img-wrapper {
+    position: relative; }
+  .recognition__title-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .recognition__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: blue;
+    letter-spacing: 4px; }
+  .recognition__text {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 18px; }
-  .instruction__text-wrapper {
-    margin-bottom: 50px; }
-  .instruction__img {
-    width: 400px;
-    height: 300px;
-    margin: 0 auto;
-    object-fit: cover; }
 
-.intro, .product, .instruction {
+.intro, .product, .recognition {
   margin-bottom: 200px; }
 
 @media only screen and (min-width: 900px) {
@@ -166,14 +176,6 @@ body {
     .product__project-content {
       left: -180px;
       bottom: 250px; }
-  .instruction {
-    flex-direction: row; }
-    .instruction__img {
-      margin: 0; }
-    .instruction__text-wrapper {
-      width: 800px; }
-    .instruction__text {
-      font-size: 25px; }
-    .instruction__img {
-      width: 500px;
-      height: 400px; } }
+  .recognition {
+    display: flex;
+    justify-content: space-around; } }
