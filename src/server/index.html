@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 <html>
@@ -18,7 +19,7 @@
                 </div>
             </div>
             <div class="sections__wrapper">
-                <div class="intro">
+                <div class="intro" data-aos="fade-up" data-aos-duration="3000">
                     <div class="intro__title-wrapper">
                         <h1 class="intro__title"> ALWAYS HAVING THE SAME PROBLEM? </h1>
                         <div class="intro__title--rectangle">
@@ -36,7 +37,7 @@
                 <div class="product">
 
 
-                    <div class="product__intro-wrapper">
+                    <div class="product__intro-wrapper" data-aos="fade-up" data-aos-duration="3000">
                         <div class="product__title-wrapper">
                             <h1 class="product__title"> SELECT </h1>
                         </div>
@@ -46,7 +47,7 @@
                     </div>
 
 
-                    <div class="product__project-wrapper">
+                    <div class="product__project-wrapper" data-aos="fade-left" data-aos-duration="4000">
                         <img src="../images/ipads.jpeg" class="product__project-img" />
                         <div class="product__project-content">
                             <div class="product__project-title">
@@ -67,6 +68,11 @@
         </div>
 
         <script src="./bundle.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 
