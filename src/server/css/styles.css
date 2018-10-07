@@ -131,6 +131,15 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 18px; }
+  .recognition__symbols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .recognition__icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    object-fit: contain; }
 
 .intro, .product, .recognition {
   margin-bottom: 200px; }
