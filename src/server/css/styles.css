@@ -208,4 +208,11 @@ body {
       margin-left: 20px;
       object-fit: contain; }
     .recognition .intro, .recognition .product, .recognition .recognition {
-      margin-bottom: 400px; } }
+      margin-bottom: 400px; }
+  #first-example, #second-example, #third-example {
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    display: none; }
+  .recognition__recog:hover #first-example {
+    display: block; } }
