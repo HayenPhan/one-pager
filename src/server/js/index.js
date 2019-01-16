@@ -51,8 +51,8 @@ const buildQuiz = () => {
        //Use backticks for pushing html.
 
   	   answers.push(`<label>
-            <input type="radio" name="question${index}" 						value="${property}" class="test">
-            ${property} :
+            <input type="radio" name="question${index}" value="${property}" class="quiz__radio-button">
+            ${property} .
             ${item.answers[property]}
           </label>`);
 			}
@@ -168,8 +168,6 @@ const buildQuiz = () => {
  // on submit, show results
 
 submitButton.addEventListener("click", showResults);
-
-
 
 
 buildQuiz();

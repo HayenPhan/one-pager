@@ -176,6 +176,11 @@ body {
 .quiz__wrapper {
   margin-bottom: 50px; }
 
+.quiz__radio-button {
+  display: inline-block;
+  width: 19px;
+  height: 19px; }
+
 .submit__title {
   text-align: center; }
 
