@@ -144,6 +144,51 @@ body {
 .intro, .product, .recognition {
   margin-bottom: 200px; }
 
+.question, .answers {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 18px; }
+
+.question {
+  font-weight: 500; }
+
+.answers {
+  margin-bottom: 70px; }
+
+.quiz__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-size: 30px; }
+
+.quiz__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 50px; }
+
+.quiz__button {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 70px; }
+
+.quiz__wrapper {
+  margin-bottom: 50px; }
+
+.submit__title {
+  text-align: center; }
+
+.answer__text-wrapper {
+  margin-bottom: 70px; }
+
+.answer__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-size: 18px; }
+
 @media only screen and (min-width: 900px) {
   .container {
     padding: 50px;
@@ -215,4 +260,17 @@ body {
     background-color: yellow;
     display: none; }
   .recognition__recog:hover #first-example {
-    display: block; } }
+    display: block; }
+  .quiz__title {
+    font-size: 50px; }
+  .quiz__text {
+    font-size: 25px; }
+  .quiz__button {
+    width: 300px;
+    height: 60px; }
+  .question, .answers {
+    font-size: 25px; }
+  .submit__title {
+    font-size: 20px; }
+  .answer__text {
+    font-size: 25px; } }

@@ -4,29 +4,29 @@ const submitButton = document.getElementById('submit');
 
 const quizQuestions = [
 {
-	question: "What kind of a person are you?",
+	question: "Wat voor soort type persoon ben jij?",
   answers: {
-  a: "Mysterious",
-  b: "Hilarious",
+  a: "Mysterieus",
+  b: "Hilarisch",
   c: "Introvert"
   },
 
 },
 {
-	question: "Which animal is your favorite?",
+	question: "Wat is je favoriete dier?",
   answers: {
-  a: "Dog",
-  b: "Dragon",
+  a: "Hond",
+  b: "Draak",
   c: "Hamster"
   },
 
 },
 {
-	question: "Which country would you like to visit?",
+	question: "Welke land zou je graag willen bezoeken als je tussen deze 3 landen mocht kiezen?",
   answers: {
   a: "Vietnam",
-  b: "America",
-  c: "South-Africa"
+  b: "Amerika",
+  c: "Zuid-Afrika"
   },
 },
 ]
@@ -71,8 +71,7 @@ const buildQuiz = () => {
   const showResults = () => {
 			const answersContainers = quizContainer.querySelectorAll('.answers');
 
-
-      quizQuestions.forEach((item, index) => {
+			const results = [];
 
     // find selected answer
 
@@ -94,27 +93,6 @@ const buildQuiz = () => {
   let casualScore = 0;
   let urbanScore = 0;
   let classyScore = 0;
-
-   /* clothingstyles.forEach((item, index) => {
-      		 if (userAnswer===item.styles.casual.answers) {
-
-           	console.log('casuaaala')
-
-          }  else if (userAnswer===item.styles.urban.answers)  {
-
-        		console.log('urbaaaan')
-
-          } else if (userAnswer===item.styles.classy.answers) {
-
-
-           	console.log('claaassy')
-
-
-          } else {
-          		console.log('None of the combs');
-          }
-    }) */
-
 
      if (userAnswer0 == "a") {
 
@@ -155,17 +133,35 @@ const buildQuiz = () => {
     // Check total score
 
      if(casualScore > 1) {
-     		console.log('Jij bent casual!');
+				 results.push(`
+						<div class="answer__text-wrapper">
+								<h2 class="answer__text"> Je hebt een casual kledingstijl! </h2>
+					  </div>
+						<div class="answer__image-wrapper">
+								<img src="src/server/images/casual.png" class="answer__image" />
+						</div>
+				`)
      } else if (urbanScore > 1) {
-     		console.log('Jij bent urban!');
+				 results.push(`
+						 <div class="answer__text-wrapper">
+	 							<h2 class="answer__text"> Je hebt een urban kledingstijl! </h2>
+	 				  </div>
+						<div class="answer__image-wrapper">
+								<img src="src/server/images/urban.png" class="answer__image" />
+						</div>
+				`)
      } else if (classyScore > 1) {
-     		console.log('Jij bent classy!');
+				 results.push(`
+						 <div class="answer__text-wrapper">
+								 <h2 class="answer__text"> Je hebt een classy kledingstijl! </h2>
+						 </div>
+						 <div class="answer__image-wrapper">
+ 								<img src="src/server/images/classy.png" class="answer__image" />
+ 						</div>
+				`)
      }
 
-
-    //resultsContainer.innerHTML = '';
-
-  })
+    	resultsContainer.innerHTML = results.join('');
 
   }
 

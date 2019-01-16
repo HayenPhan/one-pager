@@ -213,6 +213,70 @@ body {
     margin-bottom: 200px;
 }
 
+.question, .answers {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+.question {
+    font-weight: 500;
+}
+
+.answers {
+    margin-bottom: 70px;
+}
+
+.quiz {
+
+    &__title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 4px;
+        font-size: 30px;
+    }
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        margin-bottom: 70px;
+    }
+
+    &__wrapper {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+.submit {
+    &__title {
+        text-align: center;
+    }
+}
+
+.answer {
+    &__text-wrapper {
+        margin-bottom: 70px;
+    }
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 4px;
+        font-size: 18px;
+    }
+}
 
 // Desktop
 
@@ -350,5 +414,35 @@ body {
     }
 
 
+    .quiz {
+        &__title {
+            font-size: 50px;
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+
+        &__button {
+            width: 300px;
+            height: 60px;
+        }
+    }
+
+    .question, .answers {
+        font-size: 25px;
+    }
+
+    .submit {
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+    .answer {
+        &__text {
+            font-size: 25px;
+        }
+    }
 
 }
