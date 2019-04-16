@@ -46,7 +46,7 @@ const buildQuiz = () => {
         // Use the for.. in loop to get a, b and c  because they're 					not strings yet and also the property of item.answers
 
        for (const property in item.answers) {
-       // Now you are going to push html radio buttons into your 					array, which you will display later
+       // Now you are going to push html radio buttons into your 	array, which you will display later
 
        //Use backticks for pushing html.
 
@@ -73,26 +73,26 @@ const buildQuiz = () => {
 
 			const results = [];
 
-    // find selected answer
+	    // find selected answer
 
-    // Question 1  // dus 0
-    const selector0 = `input[name="question0"]:checked`;
-    const userAnswer0 = document.querySelector(selector0).value;
+	    // Question 1  // dus 0
+	    const selector0 = `input[name="question0"]:checked`;
+	    const userAnswer0 = document.querySelector(selector0).value;
 
-    // Question 2
-    const selector1 = `input[name="question1"]:checked`;
-    const userAnswer1 = document.querySelector(selector1).value;
+	    // Question 2
+	    const selector1 = `input[name="question1"]:checked`;
+	    const userAnswer1 = document.querySelector(selector1).value;
 
-    // Question 3
-    const selector2 = `input[name="question2"]:checked`;
-    const userAnswer2 = document.querySelector(selector2).value;
+	    // Question 3
+	    const selector2 = `input[name="question2"]:checked`;
+	    const userAnswer2 = document.querySelector(selector2).value;
 
 
-  // NEW
+		  // NEW
 
-  let casualScore = 0;
-  let urbanScore = 0;
-  let classyScore = 0;
+		  let casualScore = 0;
+		  let urbanScore = 0;
+		  let classyScore = 0;
 
      if (userAnswer0 == "a") {
 
@@ -114,21 +114,21 @@ const buildQuiz = () => {
 
      }
 
-    if(userAnswer1 == "a") {
-    		classyScore++;
-    } else if(userAnswer1 == "b") {
-    		urbanScore++;
-    } else if(userAnswer1 == "c") {
-    		casualScore++
-    }
+	    if(userAnswer1 == "a") {
+	    		classyScore++;
+	    } else if(userAnswer1 == "b") {
+	    		urbanScore++;
+	    } else if(userAnswer1 == "c") {
+	    		casualScore++
+	    }
 
-    if(userAnswer2 == "a") {
-    		casualScore++;
-    } else if(userAnswer2 == "b") {
-    		classyScore++;
-    } else if(userAnswer2 == "c") {
-    		urbanScore++;
-    }
+	    if(userAnswer2 == "a") {
+	    		casualScore++;
+	    } else if(userAnswer2 == "b") {
+	    		classyScore++;
+	    } else if(userAnswer2 == "c") {
+	    		urbanScore++;
+	    }
 
     // Check total score
 
